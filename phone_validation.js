@@ -22,7 +22,7 @@ function validateForm() {
     if (areaCodeMatch && areaCodeMatch[1]) {
         let areaCode = areaCodeMatch[1];
         if (!validAreaCodes.includes(areaCode)) {
-            alert('Érvénytelen mobil prefix!: ' + validAreaCodes.join(', '));
+            alert('Hibás szolgáltató-kód! Érvényes kódok: ' + validAreaCodes.join(', '));
             return false;
         }
     } else {
